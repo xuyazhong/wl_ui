@@ -1,0 +1,6 @@
+use_frameworks!
+target 'wl_ui_Tests' do
+  pod 'wl_ui', :path => '../'
+  
+  
+end
