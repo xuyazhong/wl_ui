@@ -7,5 +7,6 @@ target 'example' do
 
   # Pods for example
   pod 'MJRefresh'
+  pod 'SnapKit'
 
 end

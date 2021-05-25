@@ -6,6 +6,7 @@
 //
 
 import UIKit
+@_exported import SnapKit
 
 class ViewController: UIViewController {
 

@@ -12,9 +12,10 @@
 		87B76383265BA9A800A1DDE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87B76381265BA9A800A1DDE1 /* Main.storyboard */; };
 		87B76385265BA9AA00A1DDE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87B76384265BA9AA00A1DDE1 /* Assets.xcassets */; };
 		87B76388265BA9AA00A1DDE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87B76386265BA9AA00A1DDE1 /* LaunchScreen.storyboard */; };
-		87B763B3265C8FE800A1DDE1 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 87B763B2265C8FE800A1DDE1 /* SwiftPackageProductDependency */; };
-		87B763B4265C8FE800A1DDE1 /* BuildFile in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 87B763B2265C8FE800A1DDE1 /* SwiftPackageProductDependency */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		87B763B6265C8FE800A1DDE1 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 87B763B5265C8FE800A1DDE1 /* SwiftPackageProductDependency */; };
+		87B763B3265C8FE800A1DDE1 /* wl_ui-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 87B763B2265C8FE800A1DDE1 /* wl_ui-Dynamic */; };
+		87B763B4265C8FE800A1DDE1 /* wl_ui-Dynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 87B763B2265C8FE800A1DDE1 /* wl_ui-Dynamic */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		87B763B6265C8FE800A1DDE1 /* wl_ui in Frameworks */ = {isa = PBXBuildFile; productRef = 87B763B5265C8FE800A1DDE1 /* wl_ui */; };
+		87B763BA265C966900A1DDE1 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 87B763B9265C966900A1DDE1 /* SnapKit */; };
 		A1E16A4F89AC7D00BF3C0060 /* Pods_example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F4AF5B0D1B9BCE942CB2183 /* Pods_example.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,7 +26,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				87B763B4265C8FE800A1DDE1 /* BuildFile in Embed Frameworks */,
+				87B763B4265C8FE800A1DDE1 /* wl_ui-Dynamic in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,9 +51,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87B763B6265C8FE800A1DDE1 /* BuildFile in Frameworks */,
+				87B763B6265C8FE800A1DDE1 /* wl_ui in Frameworks */,
+				87B763BA265C966900A1DDE1 /* SnapKit in Frameworks */,
 				A1E16A4F89AC7D00BF3C0060 /* Pods_example.framework in Frameworks */,
-				87B763B3265C8FE800A1DDE1 /* BuildFile in Frameworks */,
+				87B763B3265C8FE800A1DDE1 /* wl_ui-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +106,6 @@
 				CB583B25C2244AFEDCE30795 /* Pods-example.debug.xcconfig */,
 				F3A19CEAE4D7630CFBD24C9C /* Pods-example.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -128,8 +129,9 @@
 			);
 			name = example;
 			packageProductDependencies = (
-				87B763B2265C8FE800A1DDE1 /* SwiftPackageProductDependency */,
-				87B763B5265C8FE800A1DDE1 /* SwiftPackageProductDependency */,
+				87B763B2265C8FE800A1DDE1 /* wl_ui-Dynamic */,
+				87B763B5265C8FE800A1DDE1 /* wl_ui */,
+				87B763B9265C966900A1DDE1 /* SnapKit */,
 			);
 			productName = example;
 			productReference = 87B76378265BA9A800A1DDE1 /* example.app */;
@@ -159,7 +161,8 @@
 			);
 			mainGroup = 87B7636F265BA9A800A1DDE1;
 			packageReferences = (
-				87B763B1265C8FE800A1DDE1 /* RemoteSwiftPackageReference */,
+				87B763B1265C8FE800A1DDE1 /* XCRemoteSwiftPackageReference "wl_ui" */,
+				87B763B8265C966900A1DDE1 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 87B76379265BA9A800A1DDE1 /* Products */;
 			projectDirPath = "";
@@ -441,7 +444,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		87B763B1265C8FE800A1DDE1 /* RemoteSwiftPackageReference */ = {
+		87B763B1265C8FE800A1DDE1 /* XCRemoteSwiftPackageReference "wl_ui" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/xuyazhong/wl_ui.git";
 			requirement = {
@@ -449,18 +452,31 @@
 				kind = branch;
 			};
 		};
+		87B763B8265C966900A1DDE1 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		87B763B2265C8FE800A1DDE1 /* SwiftPackageProductDependency */ = {
+		87B763B2265C8FE800A1DDE1 /* wl_ui-Dynamic */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 87B763B1265C8FE800A1DDE1 /* RemoteSwiftPackageReference */;
+			package = 87B763B1265C8FE800A1DDE1 /* XCRemoteSwiftPackageReference "wl_ui" */;
 			productName = "wl_ui-Dynamic";
 		};
-		87B763B5265C8FE800A1DDE1 /* SwiftPackageProductDependency */ = {
+		87B763B5265C8FE800A1DDE1 /* wl_ui */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 87B763B1265C8FE800A1DDE1 /* RemoteSwiftPackageReference */;
+			package = 87B763B1265C8FE800A1DDE1 /* XCRemoteSwiftPackageReference "wl_ui" */;
 			productName = wl_ui;
+		};
+		87B763B9265C966900A1DDE1 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87B763B8265C966900A1DDE1 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

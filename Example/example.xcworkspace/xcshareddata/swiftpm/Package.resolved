@@ -2,11 +2,20 @@
   "object": {
     "pins": [
       {
+        "package": "SnapKit",
+        "repositoryURL": "https://github.com/SnapKit/SnapKit.git",
+        "state": {
+          "branch": null,
+          "revision": "d458564516e5676af9c70b4f4b2a9178294f1bc6",
+          "version": "5.0.1"
+        }
+      },
+      {
         "package": "wl_ui",
         "repositoryURL": "https://github.com/xuyazhong/wl_ui.git",
         "state": {
           "branch": "master",
-          "revision": "25bc53a2dc5909e7968df59e6c1249a05507bd40",
+          "revision": "ffe62c6e95bb616b5c45d93eeb363008d91a4467",
           "version": null
         }
       }
