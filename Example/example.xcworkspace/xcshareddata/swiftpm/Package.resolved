@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "wl_ui",
+        "repositoryURL": "https://github.com/xuyazhong/wl_ui.git",
+        "state": {
+          "branch": "master",
+          "revision": "1d538d29762f3def2755501cd00041798c2dda4e",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
